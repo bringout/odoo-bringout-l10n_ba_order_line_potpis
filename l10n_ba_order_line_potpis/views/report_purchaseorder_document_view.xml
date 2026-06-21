@@ -11,7 +11,7 @@
                     <div class="col-3 bm-2" />
                     <div class="col-3 bm-2" />
                     <div class="col-3 bm-2 text-center">
-                       <span t-esc="'__________________________________'"/>
+                       <span t-out="'__________________________________'"/>
                     </div>
                 </div>
                 <div id="potpis_ime" class="row mt-4 mb16">
@@ -35,7 +35,7 @@
             <xpath expr="//tbody//tr//td[@id='product']"
                    position="before">
                 <td name="td_product_code">
-                    <span t-esc="order_line.product_code"/>
+                    <span t-out="order_line.product_code"/>
                 </td>
             </xpath>
         </template>
